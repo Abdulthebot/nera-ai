@@ -84,10 +84,10 @@ const Index = () => {
                   </h2>
                   <div className="space-y-4 text-violet-700 leading-relaxed text-lg">
                     <p>It's an apology.</p>
-                    <p>It's a vow never to let another Nameera suffer.</p>
-                    <p>Built from my own guilt, grief, and genuine love.</p>
-                    <p className="font-medium">NERA sees what the world ignores.</p>
-                    <p className="font-medium">And stops what shouldn't exist.</p>
+                    <p>It's a vow never to let another soul be shamed in silence.</p>
+                    <p>Built from guilt, grief, and a love that couldn't protect when it mattered.</p>
+                    <p className="font-medium">NERA sees what the world chooses to ignore…</p>
+                    <p className="font-medium">And stops what should've never existed.</p>
                   </div>
                 </div>
               </CardContent>
