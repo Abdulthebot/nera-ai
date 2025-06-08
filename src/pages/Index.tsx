@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { toast } from '@/hooks/use-toast';
+import { Link } from 'react-router-dom';
 import ImageUploader from '@/components/ImageUploader';
 import ScanResult from '@/components/ScanResult';
 import ProtectionTimer from '@/components/ProtectionTimer';
@@ -105,8 +106,8 @@ const Index = () => {
               <Card className="bg-white/70 backdrop-blur-sm border-violet-200 hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-6 text-center">
                   <Eye className="h-12 w-12 text-violet-400 mx-auto mb-4" />
-                  <h3 className="text-xl font-medium text-violet-900 mb-2">Silent Guardian</h3>
-                  <p className="text-violet-600">Complete privacy - no login required, auto-delete after 1 hour</p>
+                  <h3 className="text-xl font-medium text-violet-900 mb-2">NERA EYE</h3>
+                  <p className="text-violet-600">Track image misuse across the internet and take immediate action</p>
                 </CardContent>
               </Card>
 
@@ -119,8 +120,8 @@ const Index = () => {
               </Card>
             </div>
 
-            {/* Main CTA */}
-            <div className="text-center">
+            {/* Main CTAs */}
+            <div className="text-center space-y-6">
               <Button
                 onClick={() => setCurrentStep('upload')}
                 className="bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-600 hover:to-purple-700 text-white px-12 py-6 text-xl rounded-full shadow-lg transform hover:scale-105 transition-all duration-300"
@@ -128,6 +129,19 @@ const Index = () => {
                 <Upload className="h-6 w-6 mr-3" />
                 Let NERA Watch Over You
               </Button>
+              
+              <div className="text-violet-500 italic">or</div>
+              
+              <Link to="/nera-eye">
+                <Button
+                  variant="outline"
+                  className="border-2 border-violet-300 text-violet-600 hover:bg-violet-50 px-12 py-6 text-xl rounded-full shadow-lg transform hover:scale-105 transition-all duration-300"
+                >
+                  <Eye className="h-6 w-6 mr-3" />
+                  Launch NERA EYE
+                </Button>
+              </Link>
+              
               <p className="text-violet-500 mt-4 italic">
                 Upload a Memory • Shield Activated • Peace Restored
               </p>
