@@ -112,7 +112,7 @@ const Index = () => {
 
         {currentStep === 'intro' && (
           <div className="max-w-6xl mx-auto">
-            {/* Enhanced Story Section */}
+            {/* Simplified Story Section */}
             <Card className="mb-12 bg-white/5 backdrop-blur-xl border-violet-500/20 shadow-2xl relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-violet-500/5 to-purple-500/5"></div>
               <CardContent className="p-12 relative z-10">
@@ -121,17 +121,13 @@ const Index = () => {
                     NERA isn't just an app.
                   </h2>
                   <div className="space-y-6 text-violet-200 leading-relaxed text-xl max-w-4xl mx-auto">
-                    <p className="transform hover:scale-105 transition-transform duration-300">It's an apology.</p>
-                    <p className="transform hover:scale-105 transition-transform duration-300">It's a vow never to let another soul be shamed in silence.</p>
-                    <p className="transform hover:scale-105 transition-transform duration-300">Built from guilt, grief, and a love that couldn't protect when it mattered.</p>
-                    <p className="font-medium text-2xl bg-gradient-to-r from-violet-300 to-purple-300 bg-clip-text text-transparent transform hover:scale-105 transition-transform duration-300">NERA sees what the world chooses to ignore…</p>
-                    <p className="font-medium text-2xl bg-gradient-to-r from-violet-300 to-purple-300 bg-clip-text text-transparent transform hover:scale-105 transition-transform duration-300">And stops what should've never existed.</p>
+                    <p className="transform hover:scale-105 transition-transform duration-300">Its motive is to protect haya and save girls' pictures from getting misused.</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Updated Awareness Section with better readability */}
+            {/* Updated Awareness Section */}
             <Card className="mb-12 bg-gradient-to-br from-violet-900/30 to-purple-900/30 backdrop-blur-xl border-violet-500/30 shadow-2xl relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 to-purple-500/10"></div>
               <CardContent className="p-12 relative z-10">
