@@ -131,7 +131,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* Updated Awareness Section with blended colors */}
+            {/* Updated Awareness Section with better readability */}
             <Card className="mb-12 bg-gradient-to-br from-violet-900/30 to-purple-900/30 backdrop-blur-xl border-violet-500/30 shadow-2xl relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 to-purple-500/10"></div>
               <CardContent className="p-12 relative z-10">
@@ -144,43 +144,43 @@ const Index = () => {
                   </div>
                   <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     <div className="space-y-4 text-left">
-                      <h4 className="text-xl font-medium text-violet-300 mb-4">The Reality We Face:</h4>
-                      <ul className="text-violet-200 space-y-3 text-lg">
+                      <h4 className="text-xl font-medium text-violet-200 mb-4">The Reality We Face:</h4>
+                      <ul className="text-gray-100 space-y-3 text-lg">
                         <li className="flex items-start">
-                          <span className="text-violet-400 mr-3">•</span>
+                          <span className="text-violet-300 mr-3">•</span>
                           Deepfake pornography affects 90% women victims
                         </li>
                         <li className="flex items-start">
-                          <span className="text-violet-400 mr-3">•</span>
+                          <span className="text-violet-300 mr-3">•</span>
                           AI-generated fake nudes created in seconds
                         </li>
                         <li className="flex items-start">
-                          <span className="text-violet-400 mr-3">•</span>
+                          <span className="text-violet-300 mr-3">•</span>
                           Images manipulated without consent daily
                         </li>
                         <li className="flex items-start">
-                          <span className="text-violet-400 mr-3">•</span>
+                          <span className="text-violet-300 mr-3">•</span>
                           Victims suffer psychological trauma & social shame
                         </li>
                       </ul>
                     </div>
                     <div className="space-y-4 text-left">
-                      <h4 className="text-xl font-medium text-purple-300 mb-4">NERA's Promise:</h4>
-                      <ul className="text-violet-200 space-y-3 text-lg">
+                      <h4 className="text-xl font-medium text-purple-200 mb-4">NERA's Promise:</h4>
+                      <ul className="text-gray-100 space-y-3 text-lg">
                         <li className="flex items-start">
-                          <span className="text-purple-400 mr-3">•</span>
+                          <span className="text-purple-300 mr-3">•</span>
                           Detect fake & manipulated content instantly
                         </li>
                         <li className="flex items-start">
-                          <span className="text-purple-400 mr-3">•</span>
+                          <span className="text-purple-300 mr-3">•</span>
                           Track misuse across the entire internet
                         </li>
                         <li className="flex items-start">
-                          <span className="text-purple-400 mr-3">•</span>
+                          <span className="text-purple-300 mr-3">•</span>
                           Generate legal takedown requests automatically
                         </li>
                         <li className="flex items-start">
-                          <span className="text-purple-400 mr-3">•</span>
+                          <span className="text-purple-300 mr-3">•</span>
                           Restore dignity & peace of mind
                         </li>
                       </ul>
@@ -188,10 +188,10 @@ const Index = () => {
                   </div>
                   
                   <div className="mt-12 p-8 bg-white/10 backdrop-blur-sm rounded-xl border border-violet-400/30">
-                    <p className="text-2xl font-light text-violet-200 italic leading-relaxed">
+                    <p className="text-2xl font-light text-white italic leading-relaxed">
                       "NERA har us ladki ke liye hai…<br />
                       jo ek din khud se keh sake —<br />
-                      <span className="text-violet-300 font-medium">'Mere saath galat hua tha, par main galat nahi thi.'"</span>
+                      <span className="text-violet-200 font-medium">'Mere saath galat hua tha, par main galat nahi thi.'"</span>
                     </p>
                   </div>
                 </div>
@@ -313,7 +313,7 @@ const Index = () => {
         {/* Enhanced Footer */}
         <footer className="text-center mt-20 text-violet-400 text-lg space-y-4">
           <p className="font-light tracking-wide">🌙 Made with love, remorse, and hope 🌙</p>
-          <p className="italic text-violet-500 text-xl font-light tracking-wide">"NERA har us ladki ke liye hai…<br />jo ek din khud se keh sake —<br /><span className="text-violet-300 font-medium">'Mere saath galat hua tha, par main galat nahi thi.'"</span></p>
+          <p className="italic text-violet-500 text-xl font-light tracking-wide">"NERA har us ladki ke liye hai…<br />jo ek din khud se keh sake —<br /><span className="text-violet-200 font-medium">'Mere saath galat hua tha, par main galat nahi thi.'"</span></p>
         </footer>
       </div>
     </div>
