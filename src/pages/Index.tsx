@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { Upload, Shield, Moon, Heart, Eye, Download, Sparkles, Star, Zap } from 'lucide-react';
+import { Upload, Shield, Moon, Heart, Eye, Download, Sparkles, Star, Zap, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -127,6 +126,73 @@ const Index = () => {
                     <p className="transform hover:scale-105 transition-transform duration-300">Built from guilt, grief, and a love that couldn't protect when it mattered.</p>
                     <p className="font-medium text-2xl bg-gradient-to-r from-violet-300 to-purple-300 bg-clip-text text-transparent transform hover:scale-105 transition-transform duration-300">NERA sees what the world chooses to ignore…</p>
                     <p className="font-medium text-2xl bg-gradient-to-r from-violet-300 to-purple-300 bg-clip-text text-transparent transform hover:scale-105 transition-transform duration-300">And stops what should've never existed.</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* New Awareness Section */}
+            <Card className="mb-12 bg-gradient-to-br from-red-900/20 to-purple-900/20 backdrop-blur-xl border-red-500/30 shadow-2xl relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-violet-500/5"></div>
+              <CardContent className="p-12 relative z-10">
+                <div className="text-center mb-8">
+                  <div className="flex items-center justify-center mb-6">
+                    <AlertTriangle className="h-12 w-12 text-red-400 mr-4 animate-pulse" />
+                    <h2 className="text-3xl font-light text-white font-serif">
+                      The Digital Violation Crisis
+                    </h2>
+                  </div>
+                  <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div className="space-y-4 text-left">
+                      <h4 className="text-xl font-medium text-red-300 mb-4">The Reality We Face:</h4>
+                      <ul className="text-violet-200 space-y-3 text-lg">
+                        <li className="flex items-start">
+                          <span className="text-red-400 mr-3">•</span>
+                          Deepfake pornography affects 90% women victims
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-red-400 mr-3">•</span>
+                          AI-generated fake nudes created in seconds
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-red-400 mr-3">•</span>
+                          Images manipulated without consent daily
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-red-400 mr-3">•</span>
+                          Victims suffer psychological trauma & social shame
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="space-y-4 text-left">
+                      <h4 className="text-xl font-medium text-violet-300 mb-4">NERA's Promise:</h4>
+                      <ul className="text-violet-200 space-y-3 text-lg">
+                        <li className="flex items-start">
+                          <span className="text-violet-400 mr-3">•</span>
+                          Detect fake & manipulated content instantly
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-violet-400 mr-3">•</span>
+                          Track misuse across the entire internet
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-violet-400 mr-3">•</span>
+                          Generate legal takedown requests automatically
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-violet-400 mr-3">•</span>
+                          Restore dignity & peace of mind
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-12 p-8 bg-white/10 backdrop-blur-sm rounded-xl border border-violet-400/30">
+                    <p className="text-2xl font-light text-violet-200 italic leading-relaxed">
+                      "NERA har us ladki ke liye hai…<br />
+                      jo ek din khud se keh sake —<br />
+                      <span className="text-violet-300 font-medium">'Mere saath galat hua tha, par main galat nahi thi.'"</span>
+                    </p>
                   </div>
                 </div>
               </CardContent>
