@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import ImageUploader from '@/components/ImageUploader';
 import ScanResult from '@/components/ScanResult';
 import ProtectionTimer from '@/components/ProtectionTimer';
+import UserFeedback from '@/components/UserFeedback';
 
 const Index = () => {
   const [currentStep, setCurrentStep] = useState<'intro' | 'upload' | 'scanning' | 'result'>('intro');
@@ -89,7 +90,7 @@ const Index = () => {
         <div className="absolute top-60 left-1/2 w-1 h-1 bg-purple-400 rounded-full animate-bounce opacity-60" style={{ animationDelay: '0.5s' }}></div>
       </div>
 
-      <div className="container mx-auto px-6 py-8 relative z-10">
+      <div className="container mx-auto px-6 py-12 relative z-10">
         {/* Enhanced Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-8 relative">
@@ -305,6 +306,11 @@ const Index = () => {
             <ProtectionTimer onExpire={resetFlow} />
           </div>
         )}
+
+        {/* User Feedback Section */}
+        <section className="mb-20">
+          <UserFeedback />
+        </section>
 
         {/* Enhanced Footer */}
         <footer className="text-center mt-20 text-violet-400 text-lg space-y-4">
