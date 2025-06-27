@@ -192,14 +192,6 @@ const Index = () => {
                       </ul>
                     </div>
                   </div>
-                  
-                  <div className="mt-12 p-8 bg-white/10 backdrop-blur-sm rounded-xl border border-violet-400/30">
-                    <p className="text-2xl font-light text-white italic leading-relaxed">
-                      "NERA har us ladki ke liye hai…<br />
-                      jo ek din khud se keh sake —<br />
-                      <span className="text-violet-200 font-medium">'Mere saath galat hua tha, par main galat nahi thi.'"</span>
-                    </p>
-                  </div>
                 </div>
               </CardContent>
             </Card>
