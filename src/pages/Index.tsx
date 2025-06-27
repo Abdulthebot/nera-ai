@@ -91,6 +91,15 @@ const Index = () => {
       </div>
 
       <div className="container mx-auto px-6 py-12 relative z-10">
+        {/* Creator's Note Link - Moved to top */}
+        <div className="text-center mb-8">
+          <Link to="/creators-note" className="inline-flex items-center text-violet-300 hover:text-violet-200 transition-colors duration-300 text-lg font-light tracking-wide backdrop-blur-sm bg-white/5 px-6 py-3 rounded-full border border-violet-500/30 hover:border-violet-400/50 hover:bg-white/10">
+            <Heart className="w-5 h-5 mr-2 animate-pulse" />
+            Read the Creator's Note
+            <Heart className="w-5 h-5 ml-2 animate-pulse" />
+          </Link>
+        </div>
+
         {/* Enhanced Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-8 relative">
@@ -316,11 +325,6 @@ const Index = () => {
         <footer className="text-center mt-20 text-violet-400 text-lg space-y-4">
           <p className="font-light tracking-wide">🌙 Made with love, remorse, and hope 🌙</p>
           <p className="italic text-violet-500 text-xl font-light tracking-wide">"NERA har us ladki ke liye hai…<br />jo ek din khud se keh sake —<br /><span className="text-violet-200 font-medium">'Mere saath galat hua tha, par main galat nahi thi.'"</span></p>
-          <div className="mt-6">
-            <Link to="/creators-note" className="text-violet-300 hover:text-violet-200 underline text-sm transition-colors">
-              Read the Creator's Note
-            </Link>
-          </div>
         </footer>
       </div>
     </div>
