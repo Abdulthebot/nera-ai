@@ -8,8 +8,12 @@ const ChatButton = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   const toggleChat = () => {
+    console.log('Chat button clicked, current state:', isChatOpen);
     setIsChatOpen(!isChatOpen);
+    console.log('New state will be:', !isChatOpen);
   };
+
+  console.log('ChatButton rendering, isChatOpen:', isChatOpen);
 
   return (
     <>
@@ -18,7 +22,7 @@ const ChatButton = () => {
         <div className="fixed bottom-6 right-6 z-50">
           <Button
             onClick={toggleChat}
-            className="w-16 h-16 rounded-full bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-400 hover:to-purple-500 shadow-2xl transform hover:scale-110 transition-all duration-300 relative group"
+            className="w-16 h-16 rounded-full bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-400 hover:to-purple-500 shadow-2xl transform hover:scale-110 transition-all duration-300 relative group touch-manipulation"
           >
             <MessageCircle className="h-8 w-8 text-white animate-pulse" />
             
@@ -39,7 +43,10 @@ const ChatButton = () => {
       {/* Chat Overlay */}
       {isChatOpen && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <SupportChat onClose={() => setIsChatOpen(false)} />
+          <SupportChat onClose={() => {
+            console.log('Chat close requested');
+            setIsChatOpen(false);
+          }} />
         </div>
       )}
     </>
