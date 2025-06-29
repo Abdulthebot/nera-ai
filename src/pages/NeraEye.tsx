@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ArrowLeft, Search, Eye, AlertTriangle, Shield, ExternalLink, Download, Clock, Sparkles, Star, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -9,6 +8,7 @@ import { toast } from '@/hooks/use-toast';
 import { Link } from 'react-router-dom';
 import ImageUploader from '@/components/ImageUploader';
 import SearchResults from '@/components/SearchResults';
+import ChatButton from '@/components/ChatButton';
 
 const NeraEye = () => {
   const [currentStep, setCurrentStep] = useState<'intro' | 'upload' | 'searching' | 'results'>('intro');
@@ -268,6 +268,9 @@ const NeraEye = () => {
           </div>
         )}
       </div>
+
+      {/* Add Chat Button */}
+      <ChatButton />
     </div>
   );
 };

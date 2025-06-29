@@ -9,6 +9,7 @@ import ImageUploader from '@/components/ImageUploader';
 import ScanResult from '@/components/ScanResult';
 import ProtectionTimer from '@/components/ProtectionTimer';
 import UserFeedback from '@/components/UserFeedback';
+import ChatButton from '@/components/ChatButton';
 
 const Index = () => {
   const [currentStep, setCurrentStep] = useState<'intro' | 'upload' | 'scanning' | 'result'>('intro');
@@ -540,6 +541,9 @@ const Index = () => {
           <p className="font-light tracking-wide">🌙 Made with love, remorse, and hope 🌙</p>
         </footer>
       </div>
+
+      {/* Add Chat Button */}
+      <ChatButton />
     </div>
   );
 };
