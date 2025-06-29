@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Upload, Shield, Moon, Heart, Eye, Download, Sparkles, Star, Zap, AlertTriangle } from 'lucide-react';
+import { Upload, Shield, Moon, Heart, Eye, Download, Sparkles, Star, Zap, AlertTriangle, MessageCircle, FileText, Lock, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -51,6 +51,13 @@ const Index = () => {
     setCurrentStep('intro');
     setScanResult(null);
     setUploadedFile(null);
+  };
+
+  const handleSupportChat = () => {
+    toast({
+      title: "🤖 NERA Support Chat",
+      description: "Chat feature coming soon. You're not alone in this.",
+    });
   };
 
   return (
@@ -132,6 +139,139 @@ const Index = () => {
                   </h2>
                   <div className="space-y-6 text-violet-200 leading-relaxed text-xl max-w-4xl mx-auto">
                     <p className="transform hover:scale-105 transition-transform duration-300">Its motive is to protect haya and save girls' pictures from getting misused.</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Section 1: What NERA Can Do */}
+            <Card className="mb-12 bg-gradient-to-br from-violet-900/30 to-purple-900/30 backdrop-blur-xl border-violet-500/30 shadow-2xl relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 to-purple-500/10"></div>
+              <CardContent className="p-12 relative z-10">
+                <div className="text-center mb-8">
+                  <h2 className="text-3xl font-light text-white font-serif mb-8">
+                    What NERA Can Do
+                  </h2>
+                  <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto text-left">
+                    <div className="space-y-4 text-gray-100 text-lg">
+                      <div className="flex items-start">
+                        <span className="text-violet-300 mr-3 text-xl">📷</span>
+                        <span>Detect and explain if an image might be fake or manipulated</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-violet-300 mr-3 text-xl">💬</span>
+                        <span>Offer anonymous emotional support chat (no names, no login)</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-violet-300 mr-3 text-xl">🧠</span>
+                        <span>Provide self-redemption tools like letters to yourself or others</span>
+                      </div>
+                    </div>
+                    <div className="space-y-4 text-gray-100 text-lg">
+                      <div className="flex items-start">
+                        <span className="text-purple-300 mr-3 text-xl">🧾</span>
+                        <span>Generate a closure note for your healing</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-purple-300 mr-3 text-xl">🔒</span>
+                        <span>100% private — We never track or store your data</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Section 2: Talk to NERA (AI Support Chat) */}
+            <Card className="mb-12 bg-gradient-to-br from-blue-900/30 to-violet-900/30 backdrop-blur-xl border-blue-500/30 shadow-2xl relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-violet-500/10"></div>
+              <CardContent className="p-12 relative z-10">
+                <div className="text-center">
+                  <div className="flex items-center justify-center mb-6">
+                    <MessageCircle className="h-12 w-12 text-blue-300 mr-4 animate-pulse" />
+                    <h2 className="text-3xl font-light text-white font-serif">
+                      Talk to NERA
+                    </h2>
+                  </div>
+                  <p className="text-blue-200 text-lg mb-8 max-w-2xl mx-auto">
+                    An AI trained to support victims of emotional & digital trauma
+                  </p>
+                  
+                  <div className="relative inline-block mb-8">
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-violet-600 blur-lg opacity-50 animate-pulse"></div>
+                    <Button
+                      onClick={handleSupportChat}
+                      className="bg-gradient-to-r from-blue-500 to-violet-600 hover:from-blue-400 hover:to-violet-500 text-white px-12 py-6 text-xl rounded-full shadow-2xl transform hover:scale-110 transition-all duration-300 relative z-10 font-light tracking-wide"
+                    >
+                      <MessageCircle className="h-6 w-6 mr-3" />
+                      🤖 Start Talking to NERA
+                    </Button>
+                  </div>
+
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-3xl mx-auto">
+                    <p className="text-blue-200 mb-4 text-lg">You can tell NERA how you're feeling. You can ask questions like:</p>
+                    <div className="space-y-2 text-blue-100 text-left max-w-2xl mx-auto">
+                      <p className="flex items-start"><span className="mr-2">•</span>"Was it really my fault?"</p>
+                      <p className="flex items-start"><span className="mr-2">•</span>"What if someone shared my photo?"</p>
+                      <p className="flex items-start"><span className="mr-2">•</span>"How do I heal from this?"</p>
+                    </div>
+                    <p className="text-blue-200 mt-4 italic font-medium">NERA will never judge you.</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Section 3: How to Use NERA */}
+            <Card className="mb-12 bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-xl border-purple-500/30 shadow-2xl relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10"></div>
+              <CardContent className="p-12 relative z-10">
+                <div className="text-center">
+                  <div className="flex items-center justify-center mb-8">
+                    <FileText className="h-12 w-12 text-purple-300 mr-4" />
+                    <h2 className="text-3xl font-light text-white font-serif">
+                      How to Use NERA
+                    </h2>
+                  </div>
+                  
+                  <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                      <div className="text-3xl font-bold text-purple-300 mb-4">Step 1</div>
+                      <p className="text-purple-200 text-lg">Choose what you need — detect, chat, or emotional closure</p>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                      <div className="text-3xl font-bold text-purple-300 mb-4">Step 2</div>
+                      <p className="text-purple-200 text-lg">Follow the guided steps. Everything stays private.</p>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                      <div className="text-3xl font-bold text-purple-300 mb-4">Step 3</div>
+                      <p className="text-purple-200 text-lg">Get your peace — through understanding, not guilt.</p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-purple-300 mt-8 text-lg italic">
+                    Optional: Download your healing letter or closure note
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Section 4: For Every Girl Who Was Never Heard */}
+            <Card className="mb-12 bg-gradient-to-br from-pink-900/30 to-violet-900/30 backdrop-blur-xl border-pink-500/30 shadow-2xl relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-violet-500/10"></div>
+              <CardContent className="p-12 relative z-10">
+                <div className="text-center">
+                  <div className="flex items-center justify-center mb-8">
+                    <span className="text-4xl mr-4">🧕</span>
+                    <h2 className="text-3xl font-light text-white font-serif">
+                      For Every Girl Who Was Never Heard
+                    </h2>
+                  </div>
+                  
+                  <div className="space-y-6 text-pink-200 text-xl max-w-4xl mx-auto leading-relaxed">
+                    <p>If you've ever been shamed for something that wasn't your fault…</p>
+                    <p>If you've ever stayed quiet because no one would believe you…</p>
+                    <p className="text-2xl font-medium text-pink-100">NERA believes you.</p>
+                    <p className="text-xl text-pink-300 italic">This is for you.</p>
                   </div>
                 </div>
               </CardContent>
@@ -267,6 +407,28 @@ const Index = () => {
                 Upload a Memory • Shield Activated • Peace Restored
               </p>
             </div>
+
+            {/* Footer / Contact */}
+            <Card className="mt-16 bg-gradient-to-br from-slate-900/50 to-violet-900/50 backdrop-blur-xl border-slate-500/30 shadow-2xl relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-500/5 to-violet-500/5"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="text-center space-y-4">
+                  <div className="flex items-center justify-center mb-4">
+                    <Mail className="h-8 w-8 text-violet-300 mr-3" />
+                    <h3 className="text-2xl font-light text-white font-serif">Contact & Support</h3>
+                  </div>
+                  <p className="text-violet-200 text-lg">
+                    Created by <span className="font-medium text-violet-100">Abdul Hameed</span>, Final-Year B.Tech CSE, LPU Jalandhar
+                  </p>
+                  <p className="text-violet-300">
+                    For awareness campaigns or partnerships, contact{' '}
+                    <a href="mailto:nameera9655@gmail.com" className="text-violet-200 hover:text-violet-100 underline transition-colors">
+                      nameera9655@gmail.com
+                    </a>
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         )}
 
@@ -316,7 +478,6 @@ const Index = () => {
         {/* Enhanced Footer */}
         <footer className="text-center mt-20 text-violet-400 text-lg space-y-4">
           <p className="font-light tracking-wide">🌙 Made with love, remorse, and hope 🌙</p>
-          <p className="italic text-violet-500 text-xl font-light tracking-wide">"NERA har us ladki ke liye hai…<br />jo ek din khud se keh sake —<br /><span className="text-violet-200 font-medium">'Mere saath galat hua tha, par main galat nahi thi.'"</span></p>
         </footer>
       </div>
     </div>
