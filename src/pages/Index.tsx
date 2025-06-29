@@ -129,6 +129,12 @@ const Index = () => {
 
         {currentStep === 'intro' && (
           <div className="max-w-6xl mx-auto">
+            {/* Section Header - About NERA */}
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-light text-white mb-4 font-serif">About NERA</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-violet-400 to-purple-400 mx-auto rounded-full"></div>
+            </div>
+
             {/* Simplified Story Section */}
             <Card className="mb-12 bg-white/5 backdrop-blur-xl border-violet-500/20 shadow-2xl relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-violet-500/5 to-purple-500/5"></div>
@@ -143,6 +149,12 @@ const Index = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Section Header - What NERA Can Do */}
+            <div className="text-center mb-8 mt-16">
+              <h2 className="text-4xl font-light text-white mb-4 font-serif">What NERA Can Do</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-violet-400 to-purple-400 mx-auto rounded-full"></div>
+            </div>
 
             {/* Section 1: What NERA Can Do */}
             <Card className="mb-12 bg-gradient-to-br from-violet-900/30 to-purple-900/30 backdrop-blur-xl border-violet-500/30 shadow-2xl relative overflow-hidden">
@@ -181,6 +193,12 @@ const Index = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Section Header - Talk to NERA */}
+            <div className="text-center mb-8 mt-16">
+              <h2 className="text-4xl font-light text-white mb-4 font-serif">Talk to NERA</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-violet-400 mx-auto rounded-full"></div>
+            </div>
 
             {/* Section 2: Talk to NERA (AI Support Chat) */}
             <Card className="mb-12 bg-gradient-to-br from-blue-900/30 to-violet-900/30 backdrop-blur-xl border-blue-500/30 shadow-2xl relative overflow-hidden">
@@ -221,6 +239,12 @@ const Index = () => {
               </CardContent>
             </Card>
 
+            {/* Section Header - How to Use NERA */}
+            <div className="text-center mb-8 mt-16">
+              <h2 className="text-4xl font-light text-white mb-4 font-serif">How to Use NERA</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto rounded-full"></div>
+            </div>
+
             {/* Section 3: How to Use NERA */}
             <Card className="mb-12 bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-xl border-purple-500/30 shadow-2xl relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10"></div>
@@ -255,6 +279,12 @@ const Index = () => {
               </CardContent>
             </Card>
 
+            {/* Section Header - For Every Girl */}
+            <div className="text-center mb-8 mt-16">
+              <h2 className="text-4xl font-light text-white mb-4 font-serif">For Every Girl Who Was Never Heard</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-violet-400 mx-auto rounded-full"></div>
+            </div>
+
             {/* Section 4: For Every Girl Who Was Never Heard */}
             <Card className="mb-12 bg-gradient-to-br from-pink-900/30 to-violet-900/30 backdrop-blur-xl border-pink-500/30 shadow-2xl relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-violet-500/10"></div>
@@ -276,6 +306,12 @@ const Index = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Section Header - The Digital Crisis */}
+            <div className="text-center mb-8 mt-16">
+              <h2 className="text-4xl font-light text-white mb-4 font-serif">The Digital Violation Crisis</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-violet-400 to-purple-400 mx-auto rounded-full"></div>
+            </div>
 
             {/* Updated Awareness Section */}
             <Card className="mb-12 bg-gradient-to-br from-violet-900/30 to-purple-900/30 backdrop-blur-xl border-violet-500/30 shadow-2xl relative overflow-hidden">
@@ -336,6 +372,12 @@ const Index = () => {
               </CardContent>
             </Card>
 
+            {/* Section Header - Protection Features */}
+            <div className="text-center mb-8 mt-16">
+              <h2 className="text-4xl font-light text-white mb-4 font-serif">Protection Features</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-violet-400 to-blue-400 mx-auto rounded-full"></div>
+            </div>
+
             {/* Enhanced Protection Features */}
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <Card className="bg-white/10 backdrop-blur-xl border-violet-400/30 hover:shadow-2xl transition-all duration-500 group hover:scale-105 relative overflow-hidden">
@@ -375,6 +417,12 @@ const Index = () => {
               </Card>
             </div>
 
+            {/* Section Header - Get Started */}
+            <div className="text-center mb-8 mt-16">
+              <h2 className="text-4xl font-light text-white mb-4 font-serif">Get Started</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-violet-400 to-purple-400 mx-auto rounded-full"></div>
+            </div>
+
             {/* Enhanced Main CTAs */}
             <div className="text-center space-y-8">
               <div className="relative inline-block">
@@ -406,6 +454,12 @@ const Index = () => {
               <p className="text-violet-400 mt-6 italic text-lg font-light tracking-wide">
                 Upload a Memory • Shield Activated • Peace Restored
               </p>
+            </div>
+
+            {/* Section Header - Contact & Support */}
+            <div className="text-center mb-8 mt-16">
+              <h2 className="text-4xl font-light text-white mb-4 font-serif">Contact & Support</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-slate-400 to-violet-400 mx-auto rounded-full"></div>
             </div>
 
             {/* Footer / Contact */}
@@ -469,6 +523,12 @@ const Index = () => {
             <ProtectionTimer onExpire={resetFlow} />
           </div>
         )}
+
+        {/* Section Header - User Feedback */}
+        <div className="text-center mb-8 mt-16">
+          <h2 className="text-4xl font-light text-white mb-4 font-serif">User Feedback</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-violet-400 mx-auto rounded-full"></div>
+        </div>
 
         {/* User Feedback Section */}
         <section className="mb-20">
