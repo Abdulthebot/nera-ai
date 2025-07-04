@@ -120,7 +120,7 @@ const Index = () => {
           </div>
           <div className="space-y-2 md:space-y-3 mb-4 md:mb-6">
             <p className="text-violet-300 italic text-lg md:text-xl font-light tracking-wide px-4">
-              Made with love, for the love of نَمِيرَة
+              Made for Haya, for Dignity, for Allah ﷻ
             </p>
             <Badge variant="secondary" className="bg-violet-900/50 text-violet-200 border-violet-500/30 px-4 md:px-6 py-1 md:py-2 text-xs md:text-sm backdrop-blur-sm">
               Because dignity deserves a guardian
@@ -538,7 +538,7 @@ const Index = () => {
 
         {/* Enhanced Footer */}
         <footer className="text-center mt-12 md:mt-20 text-violet-400 text-base md:text-lg space-y-3 md:space-y-4 px-4">
-          <p className="font-light tracking-wide">🌙 Made with love, remorse, and hope 🌙</p>
+          <p className="font-light tracking-wide">🌙 Made for Haya, for Dignity, Insha'Allah 🌙</p>
         </footer>
       </div>
 
